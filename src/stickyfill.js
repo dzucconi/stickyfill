@@ -107,7 +107,6 @@
         if (!el.clone) clone(el);
         if (el.parent.computed.position != 'absolute' &&
             el.parent.computed.position != 'relative') el.parent.node.style.position = 'relative';
-        if (!el.numeric.zIndex) el.node.style.zIndex = 999;
         el.docOffsetTop = getDocOffsetTop(el.node);
         el.parent.height = el.parent.node.offsetHeight;
     }
